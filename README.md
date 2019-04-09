@@ -101,21 +101,66 @@ For the future once more functionality is available, this smart contract needs t
 ## Appendixes:
 
 [Appendix 1] Screenshot outlining the folder structure of the project.
+
+![Alt text](./Screenshots/1.png?raw=true "Appendix 1")
+
 [Appendix 2] Console log showing Truffle deploying the Asset Management smart contract.
+
+![Alt text](./Screenshots/2.png?raw=true "Appendix 2")
+
 [Appendix 3] Console log showing Truffle executing a transaction on the block chain.
+
+![Alt text](./Screenshots/3.png?raw=true "Appendix 3")
+
 [Appendix 4] Diagram how smart contract are deployed onto Ethereum block chain.
 Source: https://www.researchgate.net/figure/The-process-of-smart-contracts-development-deployment-and-interaction_fig3_319249505
+
+![Alt text](./Screenshots/4.png?raw=true "Appendix 4")
+
 [Appendix 5] Screenshot of source code for the asset data structure in the smart contract.
+
+![Alt text](./Screenshots/5.png?raw=true "Appendix 5")
+
 [Appendix 6] Screenshot of source code for the methods of interacting with the smart contract.
+
+![Alt text](./Screenshots/6.png?raw=true "Appendix 6")
+
 [Appendix 7] Diagram of how transactions are handled from Web3 to Ethereum block chain.
 Source: https://github.com/ethereumbook/ethereumbook/issues/376
+
+![Alt text](./Screenshots/7.png?raw=true "Appendix 7")
+
 [Appendix 8] MetaMask chrome extension.
+
+![Alt text](./Screenshots/8.png?raw=true "Appendix 8")
+
 [Appendix 9] Lite-server running a local server to host our client web application.
+
+![Alt text](./Screenshots/9.png?raw=true "Appendix 9")
+
 [Appendix 10] Web application reading smart contract address and number of assets it holds.
+
+![Alt text](./Screenshots/10.png?raw=true "Appendix 10")
+
 [Appendix 11] Web application reading asset details from smart contract and displaying in table.
+
+![Alt text](./Screenshots/11.png?raw=true "Appendix 11")
+
 [Appendix 12] Form to create a new asset.
+
+![Alt text](./Screenshots/12.png?raw=true "Appendix 12")
+
 [Appendix 13] Form filled out to create a new account.
+
+![Alt text](./Screenshots/13.png?raw=true "Appendix 13")
+
 [Appendix 14] MetaMask confirming the transaction of form submission. 
+
+![Alt text](./Screenshots/14.png?raw=true "Appendix 14")
+
 [Appendix 15] Web application updated after transaction was submitted to block chain.
+
+![Alt text](./Screenshots/15.png?raw=true "Appendix 15")
+
 
 
