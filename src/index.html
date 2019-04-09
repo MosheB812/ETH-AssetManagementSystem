@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Asset Management System</title>
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+  <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+  <!-- Style Sheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+  <div class="header">
+    <div id="dashboard">DASHBOARD</div>
+  </div>
+  <div id="loader">
+    <p class="text-center">Pulling Data From Blockchain...</p>
+  </div>
+  <div class="content">
+    <div id="contract-addr">
+      Contract Address: <span id="addr">0x68d9f8e765sfd7899s7ef654sef35sef768</span>
+    </div>
+    <div class="table-stats">
+      <div class="ri">
+        ACCOUNTS<br>
+        <span class="stat-num" id="NumOfAccounts"></span>
+      </div>
+      <div class="ri"">
+          ASSEMBLIES<br>
+          <span class=" stat-num" id="NumOfAssemblies"></span>
+      </div>
+      <div class="ri"">
+          PARTS<br>
+          <span class=" stat-num" id="NumOfParts"></span>
+      </div>
+    </div>
+    <div class="data-tables">
+      <div id="data-selection">
+        <table id="display-selection">
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td id="hover">
+              <a style="text-decoration: none" onclick="App.getAccounts()">
+                <div style="height:100%; width:100%; color: white;">
+                  Accounts
+                </div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td id="hover">
+              <a style="text-decoration: none" onclick="App.getAssemblies()">
+                <div style="height:100%; width:100%; color: white;">
+                  Assemblies
+                </div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td id="hover">
+              <a style="text-decoration: none" onclick="App.getParts()">
+                <div style="height:100%; width:100%; color: white;">
+                  Parts
+                </div>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="data">
+        <table id="data-rows" class="display" style="width:100%">
+          <thead id="datatableHeader">
+            <tr>
+              <th></th>
+              <th></th>
+              <th></th>
+              <th></th>
+            </tr>
+          </thead>
+          <tbody id="datatableResults">
+            <tr>
+              <td></td>
+              <td></td>
+              <td></td>
+              <td></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <br>
+    <div class="form-tables">
+      <div id="form-selection">
+        <table id="form-selection">
+          <tr>
+            <td></td>
+          </tr>
+          <tr>
+            <td id="hover">
+              <a style="text-decoration: none" onclick="showAddAccountFrm()">
+                <div style="height:100%; width:100%; color: white;">
+                  + Account
+                </div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td id="hover">
+              <a style="text-decoration: none" onclick="showAddAssemFrm()">
+                <div style="height:100%; width:100%; color: white;">
+                  + Assembly
+                </div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td id="hover">
+              <a style="text-decoration: none" onclick="showAddPartFrm()">
+                <div style="height:100%; width:100%; color: white;">
+                  + Part
+                </div>
+              </a>
+            </td>
+          </tr>
+          <tr>
+            <td id="hover">
+              <a style="text-decoration: none" onclick="showUpdateOwnershipFrm()">
+                <div style="height:100%; width:100%; color: white;">
+                  ^ Ownership
+                </div>
+              </a>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div id="form-div">
+      </div>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script type="text/javascript">
+    // alert("This web-app has been developed & tested on Google Chrome browser. Please verify that you're running this site on Google Chrome to avoid rendering issues.");
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="js/jquery.dataTables.min.js"></script>
+  <script src="js/table.forms.js"></script>
+  <script src="js/web3.min.js"></script>
+  <script src="js/truffle-contract.js"></script>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
